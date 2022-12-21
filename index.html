@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alireza Moghaddam</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h5 class="text-center my-3">Just a friendly little hello from me to you. 🌷</h5>
+
+        <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="iam" data-bs-toggle="tab" data-bs-target="#iam-pane" type="button"
+                    role="tab" aria-controls="iam-pane" aria-selected="true">I AM ...</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ihave" data-bs-toggle="tab" data-bs-target="#ihave-pane" type="button"
+                    role="tab" aria-controls="ihave-pane" aria-selected="false">I HAVE ...</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="idid-tab" data-bs-toggle="tab" data-bs-target="#idid-tab-pane"
+                    type="button" role="tab" aria-controls="idid-tab-pane" aria-selected="false">I DID ...</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="iread-tab" data-bs-toggle="tab" data-bs-target="#iread-tab-pane"
+                    type="button" role="tab" aria-controls="iread-tab-pane" aria-selected="false">I READ ...</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="iamin-tab" data-bs-toggle="tab" data-bs-target="#iamin-tab-pane"
+                    type="button" role="tab" aria-controls="iamin-tab-pane" aria-selected="false">I AM IN
+                    ...</button>
+            </li>
+        </ul>
+        <div class="tab-content mx-1" id="myTabContent">
+            <div class="tab-pane fade show active" id="iam-pane" role="tabpanel" aria-labelledby="iam" tabindex="0">
+                <div class="my-4">
+                    <img src="./assets/img/picture.jpg" class="float-start rounded" alt="Alireza Moghaddam" height="64"
+                        width="64">
+                    <h1 class="h4 fw-bolde">&nbsp;&nbsp; Alireza Moghaddam</h1>
+                    <p>&nbsp; &nbsp; I'm <span class="typed text-primary fw-bolder"></span></p>
+                    <p id="#about"></p>
+                </div>
+                <figure class="alert alert-secondary">
+                    <blockquote>
+                        <p id="#qoute"></p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mt-2">
+                        T.E. Lawrence.
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="tab-pane fade" id="ihave-pane" role="tabpanel" aria-labelledby="ihave" tabindex="1">
+                <div class="row p-2">
+                    <div class="col-6 p-0">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Programming</h5>
+                                <div id="#programming"></div>
+                            </div>
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Databases</h5>
+                                    <div id="#databases"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0" id="#ihave-left-sec">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Personal skills</h5>
+                                <div id="#personal"></div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Other</h5>
+                                <div id="#other"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="card-body" id="ihave-hobbies-sec">
+                            <h5 class="card-title">Hobbies</h5>
+                            <div id="#hobbies"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="idid-tab-pane" role="tabpanel" aria-labelledby="idid-tab" tabindex="2">
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="iread-tab-pane" role="tabpanel" aria-labelledby="iread-tab" tabindex="3">
+                I read</div>
+            <div class="tab-pane fade" id="iamin-tab-pane" role="tabpanel" aria-labelledby="iamin-tab" tabindex="4">
+                i am in</div>
+
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/typed.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/iam.data.js"></script>
+    <script src="./assets/js/ihave.data.js"></script>
+</body>
+
+</html>
