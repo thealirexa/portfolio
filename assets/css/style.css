@@ -1,0 +1,17 @@
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #365fa1 #ffffff;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #365fa1;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}

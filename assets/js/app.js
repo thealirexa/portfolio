@@ -1,5 +1,4 @@
 const typed = document.getElementsByClassName(".typed");
-console.log(typed);
 if (typed) {
   let typed_strings = [
     "Software engineer",
