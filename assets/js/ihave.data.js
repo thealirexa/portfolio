@@ -89,7 +89,7 @@ const addProgressSet = (parent, skills) => {
 
 const addBadgeSet = (parent, hobbies) => {
   const div = document.createElement("div");
-  div.className = "d-flex my-2";
+  div.className = "my-2";
   hobbies.forEach((hobby) => {
     div.innerHTML += `<span class="badge text-bg-secondary mx-1 ">${hobby}</span>`;
     parent.appendChild(div);
