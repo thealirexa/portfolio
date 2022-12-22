@@ -144,6 +144,7 @@ const onProjectClick = (projectName) => {
   const projectOwner = document.getElementById("#project_owner");
   const projectStack = document.getElementById("#project_stack");
   projectTitle.innerHTML = projectName;
+  projectStack.innerHTML = "";
   projectOwner.innerHTML = project.reserved;
   project.stacks.forEach(
     (q) =>
