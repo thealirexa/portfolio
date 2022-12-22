@@ -137,8 +137,24 @@ function getRandomColor() {
   return color;
 }
 
+const onProjectClick = (projectName) => {
+  const project = myProject.find((p) => p.name === projectName);
+
+  const projectTitle = document.getElementById("#project_title");
+  const projectOwner = document.getElementById("#project_owner");
+  const projectStack = document.getElementById("#project_stack");
+  projectTitle.innerHTML = projectName;
+  projectOwner.innerHTML = project.reserved;
+  project.stacks.forEach(
+    (q) =>
+      (projectStack.innerHTML += `<span class="badge rounded-pill bg-primary">${q}</span>`)
+  );
+};
+
 myProject.forEach((project) => {
-  projectsSection.innerHTML += `<button type="button" class="btn m-1" style="background-color: ${getRandomColor()};">${
+  projectsSection.innerHTML += `<button type="button" class="btn m-1" style="background-color: ${getRandomColor()};" onclick="onProjectClick('${
+    project.name
+  }')" data-bs-toggle="modal" data-bs-target="#myModal">${
     project.name
   }</button>`;
 });

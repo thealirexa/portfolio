@@ -91,7 +91,7 @@ const addBadgeSet = (parent, hobbies) => {
   const div = document.createElement("div");
   div.className = "my-2";
   hobbies.forEach((hobby) => {
-    div.innerHTML += `<span class="badge text-bg-secondary mx-1 ">${hobby}</span>`;
+    div.innerHTML += `<span class="badge text-bg-secondary">${hobby}</span>`;
     parent.appendChild(div);
   });
 };

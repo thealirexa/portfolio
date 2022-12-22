@@ -14,6 +14,31 @@
 
 
   <div class="container">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" id="#project_title"></h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="d-flex">
+                <span>Owner: </h5>
+                  <span class="fw-bold text-info" id="#project_owner"></span>
+              </div>
+              <div class="d-flex">
+                <span>Stacks: &nbsp;</span>
+                <div id="#project_stack"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <h5 class="text-center my-4" id="#greeting"></h5>
     <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -106,9 +131,11 @@
         I read</div>
       <div class="tab-pane fade" id="iamin-tab-pane" role="tabpanel" aria-labelledby="iamin-tab" tabindex="4">
         i am in</div>
-
     </div>
+
   </div>
+
+
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/typed.min.js"></script>
   <script src="./assets/js/app.js"></script>
